@@ -4,7 +4,7 @@ The purpose of this role is to add users and groups on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-users/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-users/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-users/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-users)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/users)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/users)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/releases/)|
+|[![github](https://github.com/buluma/ansible-role-users/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-users/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-users/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-users)|[![quality](https://img.shields.io/ansible/quality/57943)](https://galaxy.ansible.com/buluma/users)|[![downloads](https://img.shields.io/ansible/role/d/57943)](https://galaxy.ansible.com/buluma/users)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
