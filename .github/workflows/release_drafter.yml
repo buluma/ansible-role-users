@@ -1,16 +1,25 @@
 ---
+#
+# Ansible managed
+#
+
 name: Release Drafter
 
 on:
   push:
     # branches to consider in the event; optional, defaults to all
     branches:
+      - master
       - main
       - testing
   # pull_request event is required only for autolabeler
   pull_request:
     # Only following types are handled by the action, but one can default to all as well
     types: [opened, reopened, synchronize]
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   update_release_draft:
