@@ -20,7 +20,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
     - role: buluma.users
       # You can create groups:
       users_group_list:
-        - name: robertdb
+        - name: bulumadb
           gid: 1024
         - name: users
           # You can also remove groups.
@@ -37,11 +37,11 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
           # You can remove authorized keys.
           unauthorized_keys:
             - "ssh-rsa XYZYX54321"
-        - name: robertdb
-          comment: Robert de Bock
+        - name: bulumadb
+          comment: Michael Buluma
           uid: 1024
           # The `group` and `groups` listed here should exist.
-          group: robertdb
+          group: bulumadb
           # groups: A comma separated string of groups, i.e.:
           # groups: users,wheel
           groups: users
