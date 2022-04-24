@@ -26,7 +26,7 @@
           unauthorized_keys:
             - "ssh-rsa XYZYX54321"
         - name: bulumadb
-          comment: buluma de Bock
+          comment: Michael Buluma
           uid: 1024
           # The `group` and `groups` listed here should exist.
           group: bulumadb
