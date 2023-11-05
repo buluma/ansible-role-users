@@ -2,9 +2,9 @@
 
 The purpose of this role is to add users and groups on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-users/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-users/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-users/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-users)|[![quality](https://img.shields.io/ansible/quality/57943)](https://galaxy.ansible.com/buluma/users)|[![downloads](https://img.shields.io/ansible/role/d/57943)](https://galaxy.ansible.com/buluma/users)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-users/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-users/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-users/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-users)|[![downloads](https://img.shields.io/ansible/role/d/4874)](https://galaxy.ansible.com/buluma/users)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
