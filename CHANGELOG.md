@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-users/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/1.0.6...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#15](https://github.com/buluma/ansible-role-users/issues/15)
+- Update action [\#14](https://github.com/buluma/ansible-role-users/issues/14)
+
 ## [1.0.6](https://github.com/buluma/ansible-role-users/tree/1.0.6) (2022-07-08)
 
 [Full Changelog](https://github.com/buluma/ansible-role-users/compare/1.0.5...1.0.6)
