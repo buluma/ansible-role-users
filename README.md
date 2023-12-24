@@ -1,10 +1,10 @@
-# [Ansible role users](#users)
+# Ansible role [users](https://galaxy.ansible.com/ui/standalone/roles/buluma/users/documentation)
 
 The purpose of this role is to add users and groups on your system.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-users/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-users/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-users/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-users/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-users.svg)](https://github.com/buluma/ansible-role-users/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/users)](https://galaxy.ansible.com/ui/standalone/roles/buluma/users/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -253,9 +253,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
