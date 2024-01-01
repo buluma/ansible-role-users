@@ -18,8 +18,6 @@ molecule:
         tag: "latest"
       - image: "enterpriselinux"
         tag: "8"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
@@ -37,7 +35,7 @@ molecule:
       - image: "docker-ubuntu-systemd"
         tag: "focal"
       - image: "docker-ubuntu-systemd"
-        tag: "bionic"
+        tag: "lunar"
 
 galaxy:
   script:
