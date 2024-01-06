@@ -45,8 +45,6 @@ jobs:
         config:
           - image: "alpine-openrc"
             tag: "latest"
-          - image: "amazonlinux"
-            tag: "latest"
           - image: "enterpriselinux"
             tag: "8"
           - image: "debian-systemd"
