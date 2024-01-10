@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-users/tree/HEAD)
+## [1.1.0](https://github.com/buluma/ansible-role-users/tree/1.1.0) (2024-01-06)
 
 [Full Changelog](https://github.com/buluma/ansible-role-users/compare/1.1.0...HEAD)
 
