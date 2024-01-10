@@ -2,6 +2,14 @@
 
 ## [1.1.0](https://github.com/buluma/ansible-role-users/tree/1.1.0) (2024-01-06)
 
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/1.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/dependabot-auto-merge-action from 2.0.2 to 2.1.1 [\#22](https://github.com/buluma/ansible-role-users/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [1.1.0](https://github.com/buluma/ansible-role-users/tree/1.1.0) (2024-01-06)
+
 [Full Changelog](https://github.com/buluma/ansible-role-users/compare/1.0.6...1.1.0)
 
 **Closed issues:**
