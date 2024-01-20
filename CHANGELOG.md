@@ -1,12 +1,14 @@
 # Changelog
 
-## [1.1.0](https://github.com/buluma/ansible-role-users/tree/1.1.0) (2024-01-06)
+## [Unreleased](https://github.com/buluma/ansible-role-users/tree/HEAD)
 
 [Full Changelog](https://github.com/buluma/ansible-role-users/compare/1.1.0...HEAD)
 
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#23](https://github.com/buluma/ansible-role-users/pull/23) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/dependabot-auto-merge-action from 2.0.2 to 2.1.1 [\#22](https://github.com/buluma/ansible-role-users/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 3 to 4 [\#19](https://github.com/buluma/ansible-role-users/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.1.0](https://github.com/buluma/ansible-role-users/tree/1.1.0) (2024-01-06)
 
