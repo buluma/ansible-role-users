@@ -2,7 +2,7 @@
 - name: Verify
   hosts: all
   become: true
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - name: Get or set the home directory for {{ user.name }}
