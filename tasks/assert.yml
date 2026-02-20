@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test users_ssh_key_directory
   ansible.builtin.assert:
     that:
