@@ -27,4 +27,5 @@ _users_sudo_includedir:
   RedHat:
     "8": "#includedir /etc/sudoers.d"
     "7": "#includedir /etc/sudoers.d"
-users_sudo_includedir: "{{ _users_sudo_includedir[ansible_facts['os_family']][ansible_facts['distribution_release']] | default(_users_sudo_includedir[ansible_facts['os_family']][ansible_facts['distribution_major_version']] | default(_users_sudo_includedir['default'])) }}"
+users_sudo_includedir: "{{ _users_sudo_includedir[ansible_facts['os_family']][ansible_facts['distribution_release']] | default(_users_sudo_includedir[ansible_facts['os_family']][ansible_facts['distribution_major_version']]
+  | default(_users_sudo_includedir['default'])) }}"

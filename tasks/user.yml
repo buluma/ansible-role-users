@@ -1,5 +1,4 @@
 ---
-
 - name: user | Create local ssh_key_directory for {{ user.name }}
   ansible.builtin.file:
     path: "{{ users_ssh_key_directory }}"
@@ -111,8 +110,7 @@
   become: true
   become_user: "{{ user.name }}"
   when:
-    - (user.manage_ssh_key is defined and user.manage_ssh_key)
-      or user.private_keys is defined
+    - (user.manage_ssh_key is defined and user.manage_ssh_key) or user.private_keys is defined
 
 - name: user | Deploy authorized keys for {{ user.name }}
   ansible.posix.authorized_key:
@@ -158,8 +156,7 @@
   changed_when: false
   check_mode: false
   when:
-    - user.state is defined and user.state != "absent" or
-      user.state is not defined
+    - user.state is defined and user.state != "absent" or user.state is not defined
 
 - name: user | Set users password valid time for {{ user.name }}
   ansible.builtin.command:
