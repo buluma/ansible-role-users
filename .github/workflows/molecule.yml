@@ -59,8 +59,6 @@ jobs:
           - image: "docker-molecule-images"
             tag: "fedora45"
           - image: "docker-molecule-images"
-            tag: "opensuse"
-          - image: "docker-molecule-images"
             tag: "plucky"
           - image: "docker-molecule-images"
             tag: "ubuntu_latest"

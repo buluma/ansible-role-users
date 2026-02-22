@@ -1,4 +1,5 @@
 ---
+
 - name: user | Create local ssh_key_directory for {{ user.name }}
   ansible.builtin.file:
     path: "{{ users_ssh_key_directory }}"
@@ -93,9 +94,9 @@
         key: "{{ user.name }}"
         split: ":"
 
-    - name: user | Set base home directory to {{ getent_passwd[user.name][4] | dirname }}
+    - name: user | Set base home directory to {{ ansible_facts['getent_passwd'][user.name][4] | dirname }}
       ansible.builtin.set_fact:
-        users_home_base_dir: "{{ getent_passwd[user.name][4] | dirname }}"
+        users_home_base_dir: "{{ ansible_facts['getent_passwd'][user.name][4] | dirname }}"
 
   rescue:
     - name: user | User not found, using /home
@@ -110,11 +111,13 @@
   become: true
   become_user: "{{ user.name }}"
   when:
-    - (user.manage_ssh_key is defined and user.manage_ssh_key) or user.private_keys is defined
+    - (user.manage_ssh_key is defined and user.manage_ssh_key)
+      or user.private_keys is defined
 
 - name: user | Deploy authorized keys for {{ user.name }}
   ansible.posix.authorized_key:
     user: "{{ user.name }}"
+    exclusive: "{{ user.exclusive_keys | default(false) }}"
     state: present
     key: "{{ item }}"
   loop: "{{ user.authorized_keys }}"
@@ -155,7 +158,8 @@
   changed_when: false
   check_mode: false
   when:
-    - user.state is defined and user.state != "absent" or user.state is not defined
+    - user.state is defined and user.state != "absent" or
+      user.state is not defined
 
 - name: user | Set users password valid time for {{ user.name }}
   ansible.builtin.command:
