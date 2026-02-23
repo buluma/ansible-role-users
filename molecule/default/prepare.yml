@@ -1,14 +1,14 @@
 ---
-  - become: true
-    gather_facts: false
-    hosts: all
-    name: Prepare
-    roles:
-      - role: buluma.bootstrap
-      - role: buluma.core_dependencies
-    tasks:
-      - ansible.posix.authorized_key:
-          key: ssh-rsa XYZYX54321
-          state: present
-          user: root
-        name: Set authorized keys for root
+- become: true
+  gather_facts: false
+  hosts: all
+  name: Prepare
+  roles:
+  - role: buluma.bootstrap
+  - role: buluma.core_dependencies
+  tasks:
+  - ansible.posix.authorized_key:
+      key: ssh-rsa XYZYX54321
+      state: present
+      user: root
+    name: Set authorized keys for root

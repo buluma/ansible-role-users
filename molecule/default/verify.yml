@@ -1,21 +1,21 @@
 ---
-  - become: true
-    gather_facts: false
-    hosts: all
-    name: Verify
-    tasks:
-      - ansible.builtin.user:
-          name: notuser
-          state: absent
-        failed_when:
-          - users_check_user_notuser is changed
-        name: Check if user notuser does not exist
-        register: users_check_user_notuser
-      - ansible.posix.authorized_key:
-          key: ssh-rsa XYZYX54321
-          state: absent
-          user: root
-        failed_when:
-          - users_check_unauthorized_keys is changed
-        name: Check if unauthorized keys are deleted
-        register: users_check_unauthorized_keys
+- become: true
+  gather_facts: false
+  hosts: all
+  name: Verify
+  tasks:
+  - ansible.builtin.user:
+      name: notuser
+      state: absent
+    failed_when:
+    - users_check_user_notuser is changed
+    name: Check if user notuser does not exist
+    register: users_check_user_notuser
+  - ansible.posix.authorized_key:
+      key: ssh-rsa XYZYX54321
+      state: absent
+      user: root
+    failed_when:
+    - users_check_unauthorized_keys is changed
+    name: Check if unauthorized keys are deleted
+    register: users_check_unauthorized_keys
