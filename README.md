@@ -59,7 +59,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
       - ssh-rsa ABC12345
       name: multiplekeys
     - name: passuser
-      password: 
+      password:
         $6$mysecretsalt$qJbapG68nyRab3gxvKWPUcs2g3t0oMHSHMnSKecYNpSi3CuZm.GbBqXO8BE6EI6P1JUefhA0qvD7b5LSh./PU1
       update_password: on_create
     - authorized_keys:
@@ -244,4 +244,3 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
-
