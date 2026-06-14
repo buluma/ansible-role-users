@@ -1,8 +1,26 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-users/tree/HEAD)
+## [26.6.0](https://github.com/buluma/ansible-role-users/tree/26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-users/compare/24.3.31...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.24...26.6.0)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#34](https://github.com/buluma/ansible-role-users/pull/34) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#33](https://github.com/buluma/ansible-role-users/pull/33) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#32](https://github.com/buluma/ansible-role-users/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [26.2.24](https://github.com/buluma/ansible-role-users/tree/26.2.24) (2026-02-22)
+
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.22...26.2.24)
+
+## [26.2.22](https://github.com/buluma/ansible-role-users/tree/26.2.22) (2026-02-22)
+
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.23...26.2.22)
+
+## [26.2.23](https://github.com/buluma/ansible-role-users/tree/26.2.23) (2026-02-22)
+
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/24.3.31...26.2.23)
 
 **Closed issues:**
 
