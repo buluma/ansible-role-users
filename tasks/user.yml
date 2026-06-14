@@ -29,7 +29,7 @@
 - name: user | Set sudo options for {{ user.name }}
   ansible.builtin.template:
     dest: /etc/sudoers.d/{{ user.name | replace(".", "dot") }}
-    mode: "0640"
+    mode: "0440"
     src: sudo.j2
     validate: /usr/sbin/visudo --check --file %s
   loop_control:
