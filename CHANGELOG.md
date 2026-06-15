@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-users/tree/HEAD)
+## [26.6.1](https://github.com/buluma/ansible-role-users/tree/26.6.1) (2026-06-15)
 
-[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.6.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.6.0...26.6.1)
 
 **Closed issues:**
 
@@ -20,15 +20,15 @@
 
 ## [26.2.24](https://github.com/buluma/ansible-role-users/tree/26.2.24) (2026-02-22)
 
-[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.22...26.2.24)
-
-## [26.2.22](https://github.com/buluma/ansible-role-users/tree/26.2.22) (2026-02-22)
-
-[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.23...26.2.22)
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.23...26.2.24)
 
 ## [26.2.23](https://github.com/buluma/ansible-role-users/tree/26.2.23) (2026-02-22)
 
-[Full Changelog](https://github.com/buluma/ansible-role-users/compare/24.3.31...26.2.23)
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.22...26.2.23)
+
+## [26.2.22](https://github.com/buluma/ansible-role-users/tree/26.2.22) (2026-02-22)
+
+[Full Changelog](https://github.com/buluma/ansible-role-users/compare/24.3.31...26.2.22)
 
 **Closed issues:**
 
