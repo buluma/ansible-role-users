@@ -12,10 +12,10 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- become: true
-  gather_facts: true
+- name: Converge
   hosts: all
-  name: Converge
+  become: true
+  gather_facts: true
   roles:
     - role: buluma.users
       users:
@@ -167,19 +167,21 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 
 ```yaml
 ---
-- become: true
-  gather_facts: false
+- name: Prepare
   hosts: all
-  name: Prepare
+  become: true
+  gather_facts: false
+
+  pre_tasks:
+    - name: Install sudo if missing
+      ansible.builtin.raw: "{{ ansible_pkg_mgr | default('dnf') }} install -y sudo}"
+      become: false
+      changed_when: false
+      failed_when: false
+
   roles:
     - role: buluma.bootstrap
     - role: buluma.core_dependencies
-  tasks:
-    - ansible.posix.authorized_key:
-        key: ssh-rsa XYZYX54321
-        state: present
-        user: root
-      name: Set authorized keys for root
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -219,15 +221,14 @@ Here is an overview of related roles:
 
 ## [Compatibility](#compatibility)
 
-This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
+This role has been tested on these [container images](https://hub.docker.com/u/buluma):
 
 |container|tags|
 |---------|----|
-|[Alpine](https://hub.docker.com/r/robertdebock/alpine)|all|
-|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|all|
-|[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
-|[Fedora](https://hub.docker.com/r/robertdebock/fedora)|all|
-|[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|all|
+|[EL](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Debian](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Fedora](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
 
 The minimum version of Ansible required is 2.12, tests have been done on:
 
@@ -245,6 +246,3 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 
 [buluma](https://buluma.github.io/)
 
-### Get Help
-- Report issues: https://github.com/buluma/ansible-role-users/issues/new
-- See docs: https://docs.ansible.com/collection/gallery/ansible-role-users
