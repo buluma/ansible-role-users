@@ -16,6 +16,10 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.6.0...26.6.1)
 
+**Closed issues:**
+
+- sudoers files with 0640 instead of 0440 [\#30](https://github.com/buluma/ansible-role-users/issues/30)
+
 ## [26.6.0](https://github.com/buluma/ansible-role-users/tree/26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-users/compare/26.2.24...26.6.0)
