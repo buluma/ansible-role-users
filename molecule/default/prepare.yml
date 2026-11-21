@@ -1,4 +1,25 @@
 ---
+# The ssh keys are generated for every run, so no private key is committed.
+- name: Prepare test keys
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Create the ssh_keys directory
+      ansible.builtin.file:
+        path: "{{ lookup('ansible.builtin.env', 'MOLECULE_SCENARIO_DIRECTORY') }}/ssh_keys"
+        state: directory
+        mode: "0700"
+
+    - name: Generate ssh keys
+      ansible.builtin.command:
+        cmd: ssh-keygen -q -t ed25519 -N "" -C molecule -f {{ lookup('ansible.builtin.env', 'MOLECULE_SCENARIO_DIRECTORY') }}/ssh_keys/{{ item }}
+        creates: "{{ lookup('ansible.builtin.env', 'MOLECULE_SCENARIO_DIRECTORY') }}/ssh_keys/{{ item }}"
+      loop:
+        - privkeyuser
+        - myprivkeyuser
+
 - name: Prepare
   hosts: all
   become: true
