@@ -73,7 +73,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
             - "ALL= NOPASSWD: /usr/bin/systemctl stop httpd"
         - name: myprivkeyuser
           private_keys:
-            - content: "{{ lookup('ansible.builtin.file', lookup('ansible.builtin.env', 'MOLECULE_SCENARIO_DIRECTORY') ~ '/ssh_keys/myprivkeyuser') }}"
+            - content: "{{ lookup('ansible.builtin.file', lookup('ansible.builtin.env', 'MOLECULE_SCENARIO_DIRECTORY') ~ '/ssh_keys/myprivkeyuser', rstrip=False) }}"
               name: id_rsa
       users_groups:
         - gid: 1024
